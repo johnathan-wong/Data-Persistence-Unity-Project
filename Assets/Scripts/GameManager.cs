@@ -48,7 +48,6 @@ public class GameManager : MonoBehaviour
         {
             string json = File.ReadAllText(path);
             SaveData data = JsonUtility.FromJson<SaveData>(json);
-
             bestPlayer = data.bestPlayer;
             bestScore = data.bestScore;
         }
